@@ -15,6 +15,22 @@
 
     & .site-title {
         font-size: 1.8rem;
+        
+        & .char {
+            display: inline-block;
+
+            @include animation(
+                $name: kf-animate-chars,
+                $duration: 3s,
+                $fill-mode: forwards,
+            );
+
+            @for $i from 1 through 11 {
+                &:nth-child(#{$i}) {
+                    animation-delay: 0.09s * $i;
+                }
+            }
+        }
     }
 }
 
@@ -88,4 +104,3 @@
         font-size: 0.7rem;
     }
 }
-

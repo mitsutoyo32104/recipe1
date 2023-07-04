@@ -1,3 +1,18 @@
+@keyframes kf-animate-chars {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  30% {
+    opacity: 1;
+    transform: none;
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes {}
 .container {
   padding: 0 20px;
 }
@@ -19,6 +34,48 @@
 }
 .title-area .site-title {
   font-size: 1.8rem;
+}
+.title-area .site-title .char {
+  display: inline-block;
+  animation-name: kf-animate-chars;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+.title-area .site-title .char:nth-child(1) {
+  animation-delay: 0.09s;
+}
+.title-area .site-title .char:nth-child(2) {
+  animation-delay: 0.18s;
+}
+.title-area .site-title .char:nth-child(3) {
+  animation-delay: 0.27s;
+}
+.title-area .site-title .char:nth-child(4) {
+  animation-delay: 0.36s;
+}
+.title-area .site-title .char:nth-child(5) {
+  animation-delay: 0.45s;
+}
+.title-area .site-title .char:nth-child(6) {
+  animation-delay: 0.54s;
+}
+.title-area .site-title .char:nth-child(7) {
+  animation-delay: 0.63s;
+}
+.title-area .site-title .char:nth-child(8) {
+  animation-delay: 0.72s;
+}
+.title-area .site-title .char:nth-child(9) {
+  animation-delay: 0.81s;
+}
+.title-area .site-title .char:nth-child(10) {
+  animation-delay: 0.9s;
+}
+.title-area .site-title .char:nth-child(11) {
+  animation-delay: 0.99s;
 }
 
 @media (min-width: 835px) {
