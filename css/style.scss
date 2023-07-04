@@ -1,0 +1,91 @@
+@use 'index' as *;
+
+.mainvisual {
+    & > img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.title-area {
+    padding: $sectionSpace 0;
+    text-align: center;
+
+    & .site-title {
+        font-size: 1.8rem;
+    }
+}
+
+.photos {
+    &__main {
+        @include mq() {
+            display: flex;
+        }
+    }
+
+    &__item {
+        list-style: none;
+        width: 100%;
+        height: 500px;
+
+        & > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+
+.recipe-button {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 45px;
+
+    & > a {
+        display: inline-block;
+        color: black;
+        border: 1px solid black;
+        padding: 20px 60px;
+        text-decoration: none;
+        font-size: $defaultFsize;
+    }
+}
+
+
+.footer {
+    margin-bottom: 20px;
+    text-align: center;
+
+    & .sns {
+        margin-bottom: 20px;
+
+        &__main {
+            display: flex;
+            justify-content: center;
+        }
+    
+        &__item {
+            color: black;
+            font-size: 0.8rem;
+            list-style: none;
+            margin-right: 20px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            & > a {
+                color: black;
+                font-size: 0.6rem;
+            }
+        }
+    }
+
+    & .copyright {
+        font-size: 0.7rem;
+    }
+}
+

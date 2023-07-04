@@ -1,40 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>recipe1</title>
-      <link rel="stylesheet" href="style.css">
-   </head>
-   <body>
-      <main>
-         <div class="mainvisual mb">
-         </div>
-         <div class="inner">
-            <div class="recipe-diary mb">
-               <h1>Recipe Diary</h1>
-               <p>日々の料理レシピをまとめています。</p>
-               <p>和食や洋食、中華、お菓子までいろいろな料理レシピをアップしていますので、<br>みなさんの献立にお役立てくださいね！</p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>recipe1</title>
+        <link rel="stylesheet" href="css/vendors/reset.css">
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+<body>
+    <div class="mainvisual">
+        <img src="img/mainvisual.jpg" alt="">
+    </div>
+    <div class="title-area">
+        <div class="container">
+            <h1 class="site-title">Recipe Diary</h1>
+            <p>日々の料理レシピをまとめています。<br>
+                和食や洋食、中華、お菓子までいろいろな料理レシピをアップしていますので、<br>
+                みなさんの献立にお役立てくださいね！</p>
+        </div>
+    </div>
+    <div class="photos">
+        <ul class="photos__main">
+            <li class="photos__item"><img src="./img/recipe1.jpg" alt=""></li>
+            <li class="photos__item"><img src="./img/recipe2.jpg" alt=""></li>
+            <li class="photos__item"><img src="./img/recipe3.jpg" alt=""></li>
+        </ul>
+    </div>
+    <div class="recipe-button">
+        <a href="#" class="recipe-button">レシピ一覧を見る</a>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="sns">
+                <ul class="sns__main">
+                    <li class="sns__item">
+                        <a href="#">Instagram</a>
+                    </li>
+                    <li class="sns__item">
+                        <a href="#">Twitter</a>
+                    </li>
+                    <li class="sns__item">
+                        <a href="#">Facebook</a>
+                    </li>
+                </ul>
             </div>
-         </div>
-         <div class="photos">
-            <ul class="photo_list">
-               <li><img src="img/recipe1.jpg"></li>
-               <li><img src="img/recipe2.jpg"></li>
-               <li><img src="img/recipe3.jpg"></li>
-            </ul>
-         </div>
-         <div class="recipe-button">
-            <a href="#">レシピ一覧を見る</a>
-         </div>
-         <footer>
-            <ul class="sns-list">
-               <li><a class="sns-link" href="#">Instagram</a></li>
-               <li><a class="sns-link" href="#">Twitter</a></li>
-               <li><a class="sns-link" href="#">Facebook</a></li>
-            </ul>
             <p class="copyright">&copy; 2021 Recipe Diary</p>
-         </footer>
-      </main>
-   </body>
+        </div>
+    </footer>
+</body>
 </html>
