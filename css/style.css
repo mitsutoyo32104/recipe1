@@ -12,7 +12,122 @@
     transform: none;
   }
 }
-@keyframes {}
+@keyframes kf-cover1-slide {
+  0% {
+    clip-path: polygon(0% 0%, 50% 50%, 0% 50%, 0% 50%);
+  }
+  50% {
+    clip-path: polygon(0% 0%, 50% 50%, 0% 0%, 0% 50%);
+  }
+  100% {
+    clip-path: polygon(0% 0%, 50% 50%, 0% 0%, 0% 50%);
+  }
+}
+@keyframes kf-cover2-slide {
+  0% {
+    clip-path: polygon(0% 0%, 50% 0%, 50% 50%, 50% 50%);
+  }
+  50% {
+    clip-path: polygon(50% 0%, 50% 0%, 50% 50%, 50% 50%);
+  }
+  100% {
+    clip-path: polygon(50% 0%, 50% 0%, 50% 50%, 50% 50%);
+  }
+}
+@keyframes kf-cover3-slide {
+  0% {
+    clip-path: polygon(100% 0%, 50% 0%, 50% 50%, 50% 50%);
+  }
+  50% {
+    clip-path: polygon(100% 0%, 50% 50%, 50% 50%, 50% 50%);
+  }
+  100% {
+    clip-path: polygon(100% 0%, 50% 50%, 50% 50%, 50% 50%);
+  }
+}
+@keyframes kf-cover4-slide {
+  0% {
+    clip-path: polygon(100% 50%, 100% 0%, 50% 50%, 50% 50%);
+  }
+  50% {
+    clip-path: polygon(100% 50%, 100% 50%, 5% 50%, 50% 50%);
+  }
+  100% {
+    clip-path: polygon(100% 50%, 100% 50%, 5% 50%, 50% 50%);
+  }
+}
+@keyframes kf-cover5-slide {
+  0% {
+    clip-path: polygon(100% 100%, 100% 0%, 100% 50%, 50% 50%);
+  }
+  50% {
+    clip-path: polygon(100% 100%, 100% 0%, 100% 100%, 50% 50%);
+  }
+  100% {
+    clip-path: polygon(100% 100%, 100% 0%, 100% 100%, 50% 50%);
+  }
+}
+@keyframes kf-cover6-slide {
+  0% {
+    clip-path: polygon(50% 50%, 100% 100%, 100% 100%, 50% 100%);
+  }
+  50% {
+    clip-path: polygon(50% 50%, 50% 100%, 100% 100%, 50% 100%);
+  }
+  100% {
+    clip-path: polygon(50% 50%, 50% 100%, 100% 100%, 50% 100%);
+  }
+}
+@keyframes kf-cover7-slide {
+  0% {
+    clip-path: polygon(50% 50%, 50% 100%, 0% 100%, 50% 50%);
+  }
+  50% {
+    clip-path: polygon(50% 50%, 50% 50%, 0% 100%, 50% 50%);
+  }
+  100% {
+    clip-path: polygon(50% 50%, 50% 50%, 0% 100%, 50% 50%);
+  }
+}
+@keyframes kf-cover8-slide {
+  0% {
+    clip-path: polygon(0% 50%, 50% 50%, 0% 100%, 0% 0%);
+  }
+  50% {
+    clip-path: polygon(0% 50%, 50% 50%, 0% 50%, 0% 0%);
+  }
+  100% {
+    clip-path: polygon(0% 50%, 50% 50%, 0% 50%, 0% 0%);
+  }
+}
+@keyframes kf-cover9-slide {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+    opacity: 0;
+  }
+  25% {
+    transform: scaleX(0);
+    transform-origin: left;
+    opacity: 0;
+  }
+  50.1% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  75% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  75.1% {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+  100% {
+    transform: scaleY(0);
+    transform-origin: right;
+  }
+}
 .container {
   padding: 0 20px;
 }
@@ -43,6 +158,7 @@
   animation-delay: 0s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
+  animation-direction: normal;
 }
 .title-area .site-title .char:nth-child(1) {
   animation-delay: 0.09s;
