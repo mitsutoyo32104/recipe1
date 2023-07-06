@@ -7,41 +7,6 @@
         object-fit: cover;
         object-position: center;
     }
-
-    &.cover-slide {
-        position: relative;
-
-        & .cover-flower {
-            @for $i from 1 through 9 {
-                & > .cover#{$i} {
-                    display: inline-block;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    background-color: teal;
-
-                    @include animation(
-                        $name: kf-cover#{$i}-slide, 
-                        $duration: 5s, 
-                        $fill-mode: none,
-                    );
-                }
-            }
-
-            
-            & > .cover9 {
-                @extend .cove1;
-
-                @include animation(
-                    $name: kf-cover9-slide, 
-                    $duration: 5s, 
-                    $fill-mode: none,
-                );            
-            }
-        }
-    }
 }
 
 .title-area {
